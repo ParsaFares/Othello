@@ -25,6 +25,7 @@ void Othello::newGame(){
 }
 
 void Othello::configureInterface() {
+    //some changes happen with this obj :D
     ui.setupUi(this);
     this->setFixedSize(470, 470);
     gameScore = new QString("");
@@ -96,7 +97,7 @@ bool Othello::checkForLegalTurns() {
 }
 
 void Othello::changePlayer(int skippedTurns) {
-    switch (gameStatus *= -1) {
+    switch (gameStatus *= -1/*change turn*/) {
         case WHITE_PLAYER_TURN:
         {
             QString result1 = QString("White player\'s turn");
@@ -154,6 +155,7 @@ void Othello::changePlayer(int skippedTurns) {
         }
     }
 
+    //AI makes a turn and call this func with 0
     if(gameStatus==WHITE_PLAYER_TURN && !gameOver){
         AI *bot = new AI(gameStatus);
         bot->makeTurn(map);

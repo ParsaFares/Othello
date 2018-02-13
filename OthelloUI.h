@@ -22,7 +22,6 @@ public:
             OthelloUI->setObjectName(QString::fromUtf8("OthelloUI"));
         OthelloUI->setEnabled(true);
         OthelloUI->resize(474, 466);
-        OthelloUI->setMaximumSize(QSize(10000, 10000));
         gameStatus = new QLabel(OthelloUI);
         gameStatus->setObjectName(QString::fromUtf8("gameStatus"));
         gameStatus->setGeometry(QRect(40, 20, 160, 30));

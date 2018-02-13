@@ -25,9 +25,11 @@ private:
     Board *map;
     OthelloUI ui;
 
+    //make materials for UI
     void configureInterface();
     bool checkForLegalTurns();
     void changePlayer(int skippedTurns);
+    //refresh field with current situation
     void refreshField();
 
     bool gameOver;
