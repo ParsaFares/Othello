@@ -5,6 +5,7 @@
 #include <qthread.h>
 
 #include "MainWindow.h"
+#include "OthelloUI.h"
 #include "ClickableLabel.h"
 #include "AI/AI.h"
 #include "AI/Point.h"
@@ -22,6 +23,7 @@ public:
 private:
     MainWindow *main;
     Board *map;
+    OthelloUI ui;
 
     void configureInterface();
     bool checkForLegalTurns();
