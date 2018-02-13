@@ -12,7 +12,7 @@ set(Qt5_BASE_DIR ~/Qt5.8.0/5.8/clang_64/)
 
 set(CMAKE_PREFIX_PATH ${Qt5_BASE_DIR};${CMAKE_PREFIX_PATH})
 
-set(SOURCE_FILES main.cpp AI/Point.h AI/Point.cpp AI/LineChecker.h AI/LineChecker.cpp AI/Board.h AI/Board.cpp AI/AI.h AI/AI.cpp)
+set(SOURCE_FILES main.cpp AI/Point.h AI/Point.cpp AI/LineChecker.h AI/LineChecker.cpp AI/Board.h AI/Board.cpp AI/AI.h AI/AI.cpp ClickableLabel.h ClickableLabel.cpp)
 
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets Gui)
 
